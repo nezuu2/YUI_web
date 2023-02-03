@@ -6,6 +6,9 @@ html {
   body {
     font-size: 7px;
   }
+  .header-img {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 900px) {
   html,
@@ -25,6 +28,7 @@ html {
     width: 50%;
   }
 }
+/* ※イコールじゃなくて比較の意味 */
 @media only screen and (min-width:1600px) and (max-width:1600px) {
   html,
   body {
@@ -90,7 +94,6 @@ main {
   letter-spacing: 0.05em;
   padding-left: 0px;
 }
-
 .header a {
   display: inline-block;
   font-size: 20px;
@@ -118,7 +121,7 @@ nav {
 }
 
 nav ul {
-  text-align: center;
+  text-align: left;
   display: inline-flex;
   overflow-x: auto;
   width: 100%;
