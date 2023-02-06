@@ -7,35 +7,39 @@
     <title>YUI公式サイト｜FAQページ</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" type="image/png" href="YUI-icon.png">
+    
+    <!-- 使用しているフレームワーク -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"></script>
+
+    <script src="header&footer.js"></script>
 </head>
 
 <body>
+    <!-- 
     <div class="header">
-      <div class="header-logo">FAQページ</div>
+      <div class="header-logo"><img src="YUI-icon.png" width="50px">YUI育成ポータルサイト</div>
       <div class="header-sub">対話による勇気づけで人々を幸せに</div>
       <a href="contact-us.html">お問い合わせ</a>
     </div>
-    <nav>
-        <ul>
-          <li><a href="index.html" class="menu-active tabs-button">ホーム</a></li>
-          <li><a href="https://play.google.com/store/apps/details?id=com.websarva.wings.android.yui" class="menu tabs-button">アプリ</a></li>
-          <li><a href="counseling.html" class="menu tabs-button">カウンセリング</a></li>
-          <li><a href="javascript:alert('申し訳ございません。現在YouTubeのアカウントは制作予定でして、まだ制作していません。');" class="menu tabs-button black">YouTube</a></li>
-          <li><a href="https://twitter.com/kuromoriken" class="menu tabs-button">Twitter</a></li>
-          <!--<li><a href="https://twitter.com/Project_YUI816" class="menu tabs-button">公式Twitter</a></li>-->
-          <li><a href="history.html" class="menu tabs-button">歴史</a></li>
-          <li><a href="news.html" class="menu tabs-button">NEWS</a></li>
-          <li><a href="faq.html" class="menu tabs-button">FAQ</a></li>
-          <li><a href="privacy-policy.html" class="button">PrivacyPolicy</a></li>
-        </ul>
-    </nav>
+    -->
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <ul>
+         <!-- タイトル -->
+        <li><a href="index.html" class="menu-active tabs-button" style="font-size:5rem;display:-moz-inline-grid;justify-content:center;">
+          <img src="yui_単体.png" style="width:6.3rem;height:6.3rem;">YUI育成ポータルサイト</a>
+        </li>
+        
+        <span id="header" style="white-space:nowrap;display:inline-flex;justify-content:center;">
+          <!-- header&footer.jsで記載：一括編集の為 -->
+        </span>
+      </ul>
+  </nav>
 
     <div class="main">
-      <div class="box29">
+      <div class="box1">
           <div class="box-title"><img src="YUI-app-スクショ.png" width="105"> YUIとは</div>
           <p font size="3" class="font-arialblack" style="text-align:left;margin:1% 8%;display:inline-block">
             <a color="#ff7eee">YUI</a>は「対話による勇気づけで人々を幸せに」できたらいいなという願いで作られたAIです。<br>
@@ -49,7 +53,7 @@
           <a href="trial-version.html" class="btn btn--black">デモをプレイする</a>
       </div>
 
-      <div class="box29">
+      <div class="box1">
         <div class="box-title">Project-YUIとは</div>
         <p font size="3">
           <a color="#ff7eee"><strong>YUI APP</strong></a>を共同開発しているProjectグループです。
@@ -58,7 +62,7 @@
         <a href="project-member.html" class="btn btn--black">Project メンバーを見る</a>
       </div>
 
-      <div class="box29">
+      <div class="box1">
         <div class="box-title">ソースコードと開発ソフトについて</div>
         <p font size="3" style="text-align:left;margin:1% 8%;display:inline-block">
           実はYUIアプリのｿｰｽｺｰﾄﾞをgithubにて公開しております。
@@ -81,7 +85,7 @@
         <a href="project-member.html" class="btn btn--black">Project メンバーを見る</a>
       </div>
 
-      <div class="box29">
+      <div class="box1">
         <div class="box-title">開発者は誰？</div>
         <p font size="3" style="text-align:left;margin:1% 8%;display:inline-block">
           Project-YUIメンバーの皆さんです。
@@ -92,7 +96,7 @@
         </p>
       </div>
 
-      <div class="box29">
+      <div class="box1">
         <div class="box-title">Projectメンバーに参加するには？</div>
         <p font size="3" style="text-align:left;margin:1% 8%;display:inline-block">
           ↓以下のボタンからTwitterアカウントのリンクへ飛べます。
@@ -105,17 +109,10 @@
     </div>
 
     <div class="footer">
-      <div class="footer-logo">Footer</div>
+      <!-- <div class="footer-logo"></div> -->
       <div class="footer-list">
-        <ul>
-          <li><a href="will.html" class="button">志</a></li>
-          <li><a href="catch-copy.html" class="button">キャッチコピー</a></li>
-          <li><a href="credo.html" class="button">クレド</a></li>
-          <li><a href="history.html" class="button">歴史</a></li>
-          <li><a href="project-member.html" class="button">Projectメンバー</a></li>
-          <li><a href="contact-us.html" class="button">お問い合わせ</a></li>
-          <li><a href="materials-used.html" class="button">使用した素材</a></li>
-          <li><a href="privacy-policy.html" class="button">PrivacyPolicy</a></li>
+        <ul id="footer">
+          <!-- header&footer.jsで記載：一括編集の為 -->
         </ul>
         <div name="auther">
           <a href="project-member.html" class="text-button">©nezuu2 & Projectメンバー</a>

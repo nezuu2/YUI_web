@@ -6,9 +6,6 @@ html {
   body {
     font-size: 7px;
   }
-  .header-img {
-    width: 100%;
-  }
 }
 @media only screen and (min-width: 900px) {
   html,
@@ -17,6 +14,9 @@ html {
   }
   .header-img {
     width: 100%;
+  }
+  p {
+    font-size: 3rem;
   }
 }
 @media only screen and (min-width:1200px) {
@@ -42,7 +42,7 @@ a.fab {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 2.8rem;
 }
 
 body {
@@ -51,9 +51,17 @@ body {
   margin: 0;
 }
 
+.header-img {
+  width: 100%;
+}
+
+.width_backgounrd {
+  padding:0% calc(0% - 8rem);
+}
+
 li {
   list-style: none;
-  font-size: 1.23rem;
+  font-size: 2.3rem;
 }
 
 main {
@@ -94,6 +102,7 @@ main {
   letter-spacing: 0.05em;
   padding-left: 0px;
 }
+
 .header a {
   display: inline-block;
   font-size: 20px;
@@ -103,16 +112,15 @@ main {
   background-color: rgb(42, 79, 134);
   border-color: rgb(0, 132, 255);
   border: none;
-  padding: 10px 18px;
   position: relative;
   top: 22px;
   left: 3%;
 }
 
 nav {
-  display: flex;
+  display: grid;
   width: 100%;
-  background: rgba(17, 17, 17, 0.918);
+  background: linear-gradient(90deg, #a17d35,#9b7b3d,#91743a,#e2d2b0,#fff, #8d733f);
   position: sticky;
   top: 0px;
   z-index: 1024;
@@ -121,8 +129,8 @@ nav {
 }
 
 nav ul {
-  text-align: left;
-  display: inline-flex;
+  text-align: center;
+  display: -moz-inline-grid;
   overflow-x: auto;
   width: 100%;
   margin: 0;
@@ -131,26 +139,22 @@ nav ul {
   margin-left: auto;
   margin-right: auto;
   max-width: 115rem;
-  width: calc(100% - 8rem);
+  width: calc(100% - 1rem);
 }
 
 nav li {
-  padding: 1.0rem 1.7rem;
+  padding: 6px
 }
 
 /*スマホ画面で例１のハンバーガーメニューの形にする*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   nav {
-    background:rgb(68, 68, 68);
     position: relative;
   }
   nav ul {
-    display: grid;
+    display: -moz-inline-grid;
     padding: 0px;
     width: calc(100% - 2rem);
-  }
-  nav li {
-    padding: 0px
   }
   .header-logo {
     padding: 0px;
@@ -170,23 +174,14 @@ nav li {
     top: 18px;
     left: 0px;
   }
-  .footer-list ul li {
-    padding: 0px 0px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    margin:0px
-  }
-  a.tabs-button {
-    padding:0px;
-    margin:0px;
-  }
 }
 
 a.tabs-button {
-  color: rgb(212 212 212);
+  color: black;
   text-decoration:none;
-  font-size: 1.3rem;
+  font-size:2.5rem;
+  margin:0px;
+  padding:0px;
 
   display: flex;
   transition: all 300ms 0s ease-out;
@@ -213,13 +208,13 @@ a.tabs-button.black:active {
 }
 
 .footer {
-  background-color: rgb(75, 72, 69);
-  color: #fff;
+  background: linear-gradient(90deg, #a17d35,#9b7b3d,#91743a,#e2d2b0,#fff, #8d733f);
+  color: black;
   z-index: 10;
-  padding: 36px;
+  padding:5px;
   overflow-x: auto;
-  padding-left: calc(10% - 2rem);
-  padding-right: calc(10% - 2rem);
+  max-width:100%;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -228,39 +223,50 @@ a.tabs-button.black:active {
 }
 
 .footer-list {
-  float: left;
-  display: inline-flexbox;
+  justify-items: center;
   margin: 0 0 0 1em;
-  width: 250px;
+  max-width:100%;
+  white-space: normal;
+  display:inline-flexbox;
 }
 
 .footer-list ul {
-  display: inline-flex;
   padding: 0px;
-  position: relative;
-  left: 3px;
+  display: flex;
+  table-layout:fixed;
+  justify-content: center;
 }
 
 .footer-list li {
   padding-bottom: 20px;
-  border: 1px solid #aaa;
+  
+  white-space:nowrap;
+  justify-content: center;
+  display:flex;
+  
+  /* border: 1px solid #aaa; */
   line-height: 120%;
   margin: 0.2em;
   padding: 0.5em;
   text-align: center;
-  width: 8em; 
+  width: 8em;
 
   position:relative;
   bottom:10px;
   border-radius: 22px;
 }
+
+.footer-button a {
+  color:black;
+  text-decoration:none;
+  font-size:2.5rem;
+}
+.footer-button:hover {
+  transition: all 300ms 0s ease-out;
+  box-shadow: 8.5px 0 white;
+}
+
 @media screen and (max-width: 900px) {
-  .footer-list ul {
-    display: grid;
-    padding: 0px;
-    position: relative;
-    left: 3px;
-  }
   .left-picture {
     float: unset;
     position: relative;
@@ -268,11 +274,7 @@ a.tabs-button.black:active {
   }
 }
 @media screen and (max-width: 1200px) {
-  .footer {
-    padding: 0px;
-    padding-left: calc(2% - 2rem);
-    padding-right: calc(2% - 2rem);
-  }
+  
 }
 
 .popup {
@@ -319,8 +321,7 @@ a.tabs-button.black:active {
   color: white;
 }
 
-/* box1に変更予定 */
-.box29 {
+.box1 {
     margin: 2.3em 0.5rem;
     margin-bottom: 3.8em;
     background: white;
@@ -328,8 +329,8 @@ a.tabs-button.black:active {
     border-radius: 10px / 10px;
     display: flexbox;
 }
-.box29 .box-title {
-    font-size: 1.5em;
+.box1 .box-title {
+    font-size: 4.4em;
     background: #59aff5;
     padding: 6px;
     text-align: center;
@@ -339,60 +340,32 @@ a.tabs-button.black:active {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.box29 p {
+.box1 p {
     /*padding: 15px 150px;*/
 }
-.box29 a {
+.box1 a {
   margin: 0.1rem;
 }
-.box29 ol {
+.box1 ol {
   text-align: left;
 }
 
 @media screen and (max-width: 900px) {
-  .box29 p {
+  .box1 p {
     /*padding: 0.3px;*/
   }
 }
-
-.before-credo {
-  margin-top: .5rem;
-}
-.credo {
-  padding: 15px 20px;
-  margin: 0;
-  display: inline-block;
-  font-size: 2.5rem;
-}
-.credo li {
-  margin-bottom: .5rem;
-  text-align: left;
-  list-style: unset;
-  font-size: 1.2rem;
-}
-.credo a {
-  font-size: 1.2rem;
-}
-.credo.list-style-none li {
-  text-align: center;
-  list-style: none;
-}
-
-gray-out {
-  color: #646464;
-  font-size: 99%;
-}
-
-.box29.black {
+/* 色付きbox */
+.box1.black {
   background:#f0f0f0;
   border: solid 2px #ffffff;
 }
-.box29.white {
+.box1.white {
   background:#292929;
   color: #ffffff;
   border: solid 2px #ffffff;
 }
-.box29.wood {
+.box1.wood {
   background-image: url("木目模様2（茶色）.jpg");
   background-color: rgba(0, 0, 0, 0.781);
   background-blend-mode:lighten;
@@ -400,8 +373,8 @@ gray-out {
   border: solid 2px #ffffff;
 }
 
-.box29 .box-title--black {
-  font-size: 1.2em;
+.box1 .box-title--black {
+  font-size: 4.4em;
   background: #222222;
   padding: 6px;
   text-align: center;
@@ -409,8 +382,8 @@ gray-out {
   font-weight: bold;
   letter-spacing: 0.05em;
 }
-.box29 .box-title--blue {
-  font-size: 1.2em;
+.box1 .box-title--blue {
+  font-size: 4.4em;
   background: #001e57;
   padding: 12px;
   text-align: center;
@@ -418,8 +391,8 @@ gray-out {
   font-weight: bold;
   letter-spacing: 0.05em;
 }
-.box29 .box-title--yellow {
-  font-size: 1.2em;
+.box1 .box-title--yellow {
+  font-size: 4.4em;
   background: rgba(255, 255, 255, 0.103);
   padding: 6px;
   text-align: center;
@@ -427,8 +400,8 @@ gray-out {
   font-weight: bold;
   letter-spacing: 0.05em;
 }
-.box29 .box-title--news {
-  font-size: 1.2em;
+.box1 .box-title--news {
+  font-size: 4.4em;
   padding: 15px;
   text-align: center;
   color: #FFF;
@@ -454,6 +427,33 @@ gray-out {
   60% { background-color: #3498db; }
   80% { background-color: #001e57; }
   100% { background-color: #e74c3c; }
+}
+
+.before-credo {
+  margin-top: .5rem;
+}
+.credo {
+  padding: 15px 20px;
+  margin: 0;
+  display: inline-block;
+}
+.credo li {
+  margin-bottom: .5rem;
+  text-align: left;
+  list-style: unset;
+  font-size: 2.8rem;
+}
+.credo a {
+  font-size: 2.8rem;
+}
+.credo.list-style-none li {
+  text-align: center;
+  list-style: none;
+}
+
+gray-out {
+  color: #646464;
+  font-size: 99%;
 }
 
 .left-and-right-handed-drawing {
@@ -539,7 +539,7 @@ gray-out {
   margin: auto;
 }
 li-title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #b10000;
   border-bottom: 2px solid #dd4b4b;
   background: rgba(255, 17, 0, 0.123);
@@ -591,7 +591,7 @@ a.link:hover {
   background-color: #3a4ad625;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:800px) {
   a.btn {
     font-size: 5px;
   }
@@ -613,7 +613,7 @@ a.btn {
   padding: 5px 20px;
   border-radius: 24px / 24px;
   transition: all 200ms 0s ease-out;
-  font-size: 1.1rem;
+  font-size: 2.8rem;
 }
 a.btn--black:hover {
   margin-top: 3px;
@@ -639,14 +639,16 @@ a.btn2--black:hover {
 }
 
 a.button {
-  color: #fff;
+  color: black;
   text-decoration:none;
+  font-size:2.8rem;
   border-radius: 0px 15px;
   transition: all 300ms 0s ease-out;
   margin: 0%;
-  padding: 3%;
+  display: flex;
+  align-items: center;
 }
-a.button:hover {
+.footer-list li:hover {
   background: #9e9e9e;
   float: none;
   border-radius: 0px 15px;
@@ -668,16 +670,16 @@ a.button.black:active {
 
 .text-button {
   text-decoration:none;
-  color: white;
-  font-size: 1.1rem;
+  color: black;
+  font-size: 2.8rem;
   position: relative;
   left: 5px;
   transition: all 300ms 0s ease;
   display: inline-block;
 }
 .text-button:hover {
-  color: #ffffff;
-  font-size: 1.2rem;
+  /* color: #fff; */
+  font-size: 2.84rem;
 }
 
 .hidden {
