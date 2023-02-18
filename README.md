@@ -1,10 +1,10 @@
-# yui_dev (YUI-App公式サイトの開発用サイト)
-プレスリリースした際の、PR用サイト。
+# YUI_web (YUI-Appの公式サイト)
+
 <!-- # Short Description -->
 
-このサイトのリンク：https://nezuu2.github.io/yui_dev/
+このサイトのリンク：https://nezuu2.github.io/YUI_web/
 
-このサイトで使わせていただいた素材：https://nezuu2.github.io/yui_dev/materials-used.html
+このサイトで使わせていただいた素材：https://nezuu2.github.io/YUI_web/materials-used.html
 
 YUI AppのGithubサイト：https://github.com/morikentiger/YUI
 
@@ -14,14 +14,13 @@ YUI AppのGithubサイト：https://github.com/morikentiger/YUI
 
 <!-- CREATED_BY_LEADYOU_README_GENERATOR -->
 
-# yui_dev (YUI-App of offical-website as dev version)
-A website for PR purposes when a press release is made.
+# YUI_web (YUI-App of offical-website)
 
 <!-- # Short Description -->
 
-Link of this site：https://nezuu2.github.io/yui_dev/
+Link of this site：https://nezuu2.github.io/YUI_web/
 
-Used materials from this site：https://nezuu2.github.io/yui_dev/materials-used.html
+Used materials from this site：https://nezuu2.github.io/YUI_web/materials-used.html
 
 github of YUI-App：https://github.com/morikentiger/YUI
 
